@@ -18,22 +18,68 @@
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
-      <p><a href="#">Link</a></p>
+      <div class="card">
+        <div class="card-header">
+          Categories
+        </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item catHover">Default<span type="button" class="badge badge-light deleteBtn">X</span></li>
+          </ul>
+        </div>
     </div>
-    <div class="col-sm-8 text-left"> 
-      <h1>Welcome</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-      <hr>
-      <h3>Test</h3>
-      <p>hello</p>
+      <div class="col-sm-7 text-left" id="todoList"> 
+      </div>
+    <div class="col-sm-3 sidenav">
+      <form>
+  <div class="form-group row">
+    <label for="inputTitle" class="col-sm-3 col-form-label text-left">Title</label>
+    <div class="col-sm-9">
+      <input type="text" class="form-control" id="inputTitle" placeholder="Title">
     </div>
-    <div class="col-sm-2 sidenav">
-      <div class="well">
-        <p>ADS</p>
+  </div>
+  <div class="form-group row">
+    <label for="inputDescription" class="col-sm-3 col-form-label text-left">Description</label>
+    <div class="col-sm-9">
+      <textarea type="text" class="form-control" id="inputDescription" placeholder="Description" rows="2"></textarea>
+    </div>
+  </div>
+  <fieldset class="form-group">
+    <div class="row">
+      <label class="col-form-label col-sm-2 pt-0">Priority</label>
+      <div class="col-sm-10">
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1">
+          <label class="form-check-label" for="gridRadios1">
+            High
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2" checked>
+          <label class="form-check-label" for="gridRadios2">
+            Medium
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3">
+          <label class="form-check-label" for="gridRadios3">
+            Low
+          </label>
+        </div>
       </div>
-      <div class="well">
-        <p>ADS</p>
-      </div>
+    </div>
+  </fieldset>
+  <div class="form-group row">
+    <label for="inputDescription" class="col-sm-3 col-form-label text-left">Notes</label>
+    <div class="col-sm-9">
+      <textarea type="text" class="form-control" id="inputDescription" placeholder="Notes" rows="2"></textarea>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-10">
+      <button type="submit" class="btn btn-primary">Add Task</button>
+    </div>
+  </div>
+</form>
     </div>
   </div>
 </div>
