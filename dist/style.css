@@ -23,8 +23,7 @@
       .row.content {height:auto;} 
     }
 
-    .deleteBtn {
-      cursor: pointer;
+    .btn {
       transition: all .2s ease-in-out;
     }
 
@@ -37,6 +36,7 @@
       background-color: rgb(211, 213, 216);
     }
 
-        .btn:focus {
-        outline: 0;
+    .btn:focus {
+      /* outline: none; */
+      box-shadow: none;
     }
