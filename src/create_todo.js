@@ -5,7 +5,7 @@ const todoModule = (() => {
   let id = 0;
 
   return {
-    addTodoList: (title, descritpion, dueDate, priority, notes, category) => {
+    addTodoList: (title, descritpion, dueDate, priority, notes) => {
       this.title = title;
       this.descritpion = descritpion;
       this.dueDate = dueDate;
